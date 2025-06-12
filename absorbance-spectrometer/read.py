@@ -5,10 +5,10 @@ import locale
 
 locale.setlocale(locale.LC_NUMERIC, 'nl_NL.UTF-8')
 
-ser = serial.Serial('COM7', 9600, timeout=1)
+ser = serial.Serial('COM5', 9600, timeout=1)
 ser.readline()
 
-with open('output/temperatures.csv', mode='w', newline='') as file:
+with open('output/logs.csv', mode='w', newline='') as file:
     writer = csv.writer(file, delimiter=';')
     writer.writerow(['Timestamp (s)', 'Temperature (C)', 'Light'])
 

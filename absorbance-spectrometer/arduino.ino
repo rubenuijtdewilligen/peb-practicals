@@ -39,7 +39,7 @@ void loop() {
   float tempC = sensors.getTempCByIndex(0);
   float tempK = tempC + 273.15;
 
-  int lightValue = analogRead(ldrPin);  // 0–1023
+  int lightValue = analogRead(ldrPin); // 0–1023
 
   Serial.print("Temp:");
   Serial.print(tempC);
